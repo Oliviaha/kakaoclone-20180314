@@ -44,14 +44,72 @@
                 <!-- cog icon -->
                     <i class="fa fa-cog fa-lg"></i>
             </div>
-
-
-
         </div>   
-
-
-
-
     </header>
+    
+    
+<!-- Searchbar section -->
+    <main class="friends">
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+        <input type="text" placeholder="Find friends, chats, Plus Friends">
+        </div>
+
+<!-- friends화면에서 my profile 부분이지만 클래스 이름을 friends__section로 둠 왜냐하면 profile html이 있으니까  -->
+        <section class="friends__section">
+            <header class="friends__section-header">
+                <!-- my profile 부분이랑 friendlist부분의 글자가 같으니까 동일한 클래스로 네이밍해서 css적용하자 -->
+                <h6 class="friends__section-title">My Profile</h6>
+            </header>
+<!-- my profile 시작부분 -->
+<!-- rows클래스로 묶어주고 -->
+            <div class="friends__section-rows">
+<!-- row class1 -->
+                <div class="friends__section-row">
+                <img src="" alt="">
+                <a href="profile.html" class="friends__section-name">Olivia</a>
+                </div>
+<!-- row class2 -->
+                <div class="friends__section-row">
+                <img src="" alt="">
+                <span class="friends__section-name">Friends'Names Display</span>
+            </div>
+        </section>
+<!-- Friends 화면에서 friends list 부분. -->
+        <section class="friends__section">
+            <header class="friends__section-header">
+                <h6 class="friends__section-title">Friends</h6>
+            </header>
+            <div class="friends__section-rows">
+                <div class="friends_section-row">
+                    <div class="friends__section-column">
+                        <img src="" alt="">
+                        <span class="friends__section-name">Nick</span>
+                    </div>
+                    <span class="friends__section-tagline">
+                        Olivia is my only love.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+<!-- kakaotalk below menu 각 탭을 누르면 화면 바뀌니까 각 화면이랑 연결하기 -->
+    <nav class="tab-bar">
+        <a href="index.html" class="tab-bar_tab tab-bar__tab--selected">
+            <i class="fa fa-user"></i><span class="tab-bar__title">Friends</span>
+        </a>
+        <a href="chats.html" class="tab-bar_tab">
+            <i class="fa fa-comment"></i><span class="tab-bar__title">Chats</span>
+        </a>
+        <a href="find.html" class="tab-bar_tab">
+            <i class="fa fa-search"></i><span class="tab-bar__title">Find</span>
+        </a>
+        <a href="more.html" class="tab-bar_tab">
+            <i class="fa fa-ellipsis-h"></i><span class="tab-bar__title">More</span>
+        </a>
+    </nav>
 </body>
 </html>
