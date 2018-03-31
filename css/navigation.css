@@ -1,0 +1,29 @@
+/* kakaotalk below menu */
+
+.tab-bar {
+    background-color: #f7f7f7;
+    /* 탭바는 고정되어있어야 하니까, position fixed를 이용 그리고 바닥에 딱 붙어야하니까 bottom은 0으로 */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+
+/* 아이콘과 밑에 글자를 띄어놔야 하니까 아이콘들만 선택해서 디스플레이 플렉스 한 다음에 블록으로 지정
+ */
+
+/* 나란히 붙어있던 걸 줄바꿈하려면 flex column으로  */
+
+.tab-bar .tab-bar_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab-bar .tab-bar_tab i {
+     display: block;
+     text-align: center;
+    
+ }

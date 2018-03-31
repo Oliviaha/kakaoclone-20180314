@@ -2,6 +2,9 @@
     background-color: #523737;
     color: white;
     padding : 5px 10px 15px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 /* top-header안에 있는 header__top 클래스에 세개의 header__column끼리 flex주고
