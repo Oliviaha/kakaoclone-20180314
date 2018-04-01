@@ -8,7 +8,8 @@
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding : 10px 30px 5px 30px;
+    border-top :1px solid #c1c1c1;
 }
 
 
@@ -21,9 +22,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
+    color: #c1c1c1;
 }
 .tab-bar .tab-bar_tab i {
-     display: block;
-     text-align: center;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    /* i클래스에 font-size로 하면 아이콘이지만 크기 조절이 되는구나! */
+    font-size: 24px;
     
  }
+.tab-bar .tab-bar__title{
+    font-size: 10px;
+}
+
+/* 이 selected 명령을 위에 놓으니까 색깔 적용이 안되었었는데
+아래에 두니까 적용이 됨. 왜지? */
+.tab-bar .tab-bar__tab--selected{
+    color: #523737;
+}
