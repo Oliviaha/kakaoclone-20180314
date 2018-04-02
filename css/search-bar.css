@@ -1,13 +1,26 @@
 .search-bar {
     padding: 10px 25px;
+    
 }
 /* input지정할때 그냥 클래스이름, input 하면됨 */
 .search-bar input {
     width: 100%;
-    padding : 0 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f1f2f3;
+    font-size: 13px;
+    text-align : center;
+    
+}
+/* 서치바에 선택되면 파랗게 보이는 선을 지우자 */
+.search-bar input:focus {
+    outline: none;
 }
 /* i는 절대값으로 되어있어서 search-bar를 기준으로 잡힘 */
 .search-bar i{
     position: absolute;
-    padding: 2px 4px;
+    padding: 4px 14px;
+    color: #bbbbbb;
 }

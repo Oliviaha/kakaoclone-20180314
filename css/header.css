@@ -49,3 +49,22 @@ top-header안에 있는 header__bottom 클래스 내에서 세개의 header__col
 .top-header .header__number {
     color: yellow;
 }
+
+/* my profile 부분에 있는 보더 선 */
+
+.friends__section .friends__section-header {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding : 10px 15px;
+}
+.friends__section .friends__section-title {
+    font-size: 12px;
+    padding-left: 9px;
+    color: #b4b4b4;
+}
+
+/* 이제 my profile 아래쪽  */
+
+.friends__section-rows .friends__section-row{
+    padding: 10px 0;
+}
