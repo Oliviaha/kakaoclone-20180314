@@ -1,0 +1,13 @@
+.search-bar {
+    padding: 10px 25px;
+}
+/* input지정할때 그냥 클래스이름, input 하면됨 */
+.search-bar input {
+    width: 100%;
+    padding : 0 20px;
+}
+
+.search-bar i{
+    position: absolute;
+    padding: 2px 4px;
+}
