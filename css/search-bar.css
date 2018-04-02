@@ -6,7 +6,7 @@
     width: 100%;
     padding : 0 20px;
 }
-
+/* i는 절대값으로 되어있어서 search-bar를 기준으로 잡힘 */
 .search-bar i{
     position: absolute;
     padding: 2px 4px;
