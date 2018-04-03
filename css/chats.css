@@ -1,0 +1,25 @@
+.chats .chats__list{
+    border-top:1px solid #ebebeb;
+}
+
+.chats__list .chats__chat {
+    padding: 15px;
+}
+
+.chats__chat .chat__content img{
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #ebebeb;
+}
+
+.chats__list .chats__chat a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.chats__chat .chat__content {
+    display: flex;
+    align-items: flex-start;
+}

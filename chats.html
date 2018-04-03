@@ -40,13 +40,12 @@
                 <span class="header__text">Edit</span>
             </div>
             <div class="header__column">
-                <span class="header__text">Chats <!--caret icon --> <i class="fa fa-caret-down"></i></span></span>
+                <span class="header__text">Chats <!--caret icon --> <i class="fa fa-caret-down"></i></span>
             </div>
         </div>   
-        
     </header>
 <!-- main 시작부분 -->
-        <main class="chats"></main>
+        <main class="chats">
 <!-- Searchbar section -->
             <div class="search-bar">
                 <i class="fa fa-search"></i>
@@ -61,13 +60,13 @@
                             <img src="images/avatar.jpg">
                             <div class="chat__preview">
                                 <h3 class="chat__user">Nick</h3>
-                            <!-- 대화내용 column  -->
+                    <!-- 대화내용 column  -->        
                                 <span class="chat__last-message">Hello Honey! It's me.</span>
-                        </div>
-                            <!-- 시간 column -->
-                        <span class="chat__date-time">
-                                13:37
-                        </span>
+                            </div>
+                    <!-- 시간 column -->            
+                            <span class="chat__date-time">
+                                 13:37
+                            </span>
                     </a>
                 </li>
                 <li class="chats__chat">
@@ -79,10 +78,11 @@
                                 <h3 class="chat__user">KakaoTalk</h3>
                             <!-- 대화내용 column  -->
                                 <span class="chat__last-message">You logged into KakaoTalk PC from the PC</span>
+                            </div>
                         </div>
                             <!-- 시간 column -->
                         <span class="chat__date-time">
-                                Mar 13
+                            Mar 13
                         </span>
                     </a>
                 </li>
@@ -91,25 +91,23 @@
             <div class="chat-btn">
                 <i class="fa fa-comment"></i>
             </div>
-            
+        </main>    
 
 <!-- kakaotalk below menu 각 탭을 누르면 화면 바뀌니까 각 화면이랑 연결하기 -->
 
         <nav class="tab-bar">
-            <a href="index.html" class="tab-bar_tab">
+            <a href="index.html" class="tab-bar__tab">
                 <i class="fa fa-user"></i><span class="tab-bar__title">Friends</span>
             </a>
             <a href="chats.html" class="tab-bar_tab tab-bar__tab--selected">
                 <i class="fa fa-comment"></i><span class="tab-bar__title">Chats</span>
             </a>
-            <a href="find.html" class="tab-bar_tab">
+            <a href="find.html" class="tab-bar__tab">
                 <i class="fa fa-search"></i><span class="tab-bar__title">Find</span>
             </a>
             <a href="more.html" class="tab-bar_tab">
                 <i class="fa fa-ellipsis-h"></i><span class="tab-bar__title">More</span>
             </a>
         </nav>
-
-
 </body>
 </html>
