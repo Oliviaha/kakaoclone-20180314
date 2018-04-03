@@ -1,0 +1,54 @@
+/* my profile 부분에 있는 보더 선 */
+
+.friends__section .friends__section-header {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding : 10px 15px;
+}
+.friends__section .friends__section-title {
+    font-size: 12px;
+    padding-left: 9px;
+    color: #b4b4b4;
+}
+
+/* 이제 my profile 아래쪽  */
+
+.friends__section-rows .friends__section-row {
+    padding: 10px 14px;
+    /* 상태메시지랑 프로필 그림을 나라히 두기 위해 display flex를 사용 */
+    display: flex;
+    align-items: center;
+
+}
+
+.friends__section-row img {
+    width: 50px;
+/* 네모난 프로필 사진을 동그랗게 주기  */
+    border-radius: 50%;
+    border : 1px solid grey;
+    margin-right: 14px;
+}
+
+.friends__section-row a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.friends__section-rows .friends__section-column{
+    display:flex;
+    align-items: center;
+
+}
+.friends__section-rows .friends__section-row.with-tagline {
+    justify-content: space-between;
+}
+
+.friends__section-rows .friends__section-tagline{
+    border : none;
+    padding: 14px;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    font-size: 11px;
+    color: #535050;
+}
+
