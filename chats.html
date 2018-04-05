@@ -57,16 +57,15 @@
                     <!-- 첫번째 chat list 시작 -->
                     <a href="chat.html">
                         <div class="chat__content">
-                            <img src="images/avatar.jpg">
+                            <img src="images/nick.jpg">
+                            <!-- 카카오톡 채팅에서 캐릭터랑 메시지는 왼쪽에 정렬되고 시간은 오른쪽에 정렬되므로
+                            둘을 따로 클래스 만들어두고 나중에 justify-content 사용해서 space-btw하면! -->
                             <div class="chat__preview">
-                                <h3 class="chat__user">Nick</h3>
-                    <!-- 대화내용 column  -->        
-                                <span class="chat__last-message">Hello Honey! It's me.</span>
-                            </div>
-                    <!-- 시간 column -->            
-                            <span class="chat__date-time">
-                                 13:37
-                            </span>
+                                <h3 class="chat__user">Nick</h3>       
+                                <span class="chat__last-message">Hello Honey! It's me.</span>   
+                            </div>    
+                        </div>        
+                        <span class="chat__date-time">13:37 </span>
                     </a>
                 </li>
                 <li class="chats__chat">
@@ -76,13 +75,11 @@
                             <img src="images/kakaotalk.png">
                             <div class="chat__preview">
                                 <h3 class="chat__user">KakaoTalk</h3>
-                            <!-- 대화내용 column  -->
                                 <span class="chat__last-message">You logged into KakaoTalk PC from the PC</span>
                             </div>
-                        </div>
-                            <!-- 시간 column -->
+                        </div>   
                         <span class="chat__date-time">
-                            Mar 13
+                        Mar 13
                         </span>
                     </a>
                 </li>

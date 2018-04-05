@@ -14,7 +14,7 @@
 
 .chats__list .chats__chat a{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-decoration: none;
     color: inherit;
 }
@@ -22,4 +22,13 @@
 .chats__chat .chat__content {
     display: flex;
     align-items: flex-start;
+}
+
+.chats__chat .chat__preview {
+    padding-left: 12px;
+    padding-top: 12px;
+}
+
+.chats__chat .chat__user {
+    font-weight: 700;
 }
