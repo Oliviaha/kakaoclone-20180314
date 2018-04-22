@@ -1,9 +1,12 @@
 .chats .chats__list{
     border-top:1px solid #ebebeb;
+    border-bottom: 1px #ebebeb;
 }
 
 .chats__list .chats__chat {
     padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+
 }
 
 .chats__chat .chat__content img{
@@ -20,6 +23,7 @@
 }
 
 .chats__chat .chat__content {
+    /* 채팅 텍스트 미리보기 부분을 하나로 묶어서 (display:flex;의 의미) 정렬하자.  */
     display: flex;
     align-items: flex-start;
 }
@@ -31,4 +35,32 @@
 
 .chats__chat .chat__user {
     font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.chat__preview .chat__last-message{
+    color: #b4b4b4;
+    font-size: 11px;
+}
+/* 왜? last messeage 에 margin-top 주면 이름하고 내용사이 간격이 안생기고 chat-user에다가 margin-bottom하면 생기지? */
+
+.chats__chat .chat__date-time {
+    font-size: 10px;
+    color: #b4b4b4;
+}
+
+.chat-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #ffe94e;
+    /* btn 안의 요소들을 하나로 묶기. i클래스 하나 있으므로 그것의 정렬을 조정하는 의미의 flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 네모에서 동그랗게 만들기 */
+    border-radius: 50%;
+    /* 왜? 위치를 아래로 정렬하기 위해 position을 absolute로 */
+    position: absolute;
+    right: 20px;
+    bottom : 80px;
 }
