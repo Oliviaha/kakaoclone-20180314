@@ -20,6 +20,8 @@ top-header안에 있는 header__bottom 클래스 내에서 세개의 header__col
     margin-bottom: 15px;
     font-size: 12px;
 }
+
+
 .top-header .header__bottom{
     margin: 0 10px;
 }
@@ -31,21 +33,27 @@ top-header안에 있는 header__bottom 클래스 내에서 세개의 header__col
 .top-header .header__column {
     width: 33%;
 }
+
+
+
 /* 
 우리는 가운데는 창크기 상관없이 가운데, 오른쪽 (배터리랑 설정부분) 은 오른쪽 정렬로
 /* 붙게 해야 함. 그래서 두 가지를 따로 지정해주어야 함. */
 
 /* 두번째 요소를 지정할때는 nth-child(2) second-child같은게 없어서.
 해당 클래스에서 젤 마지막 요소를 지정할때는 last-child로 언급해주면 됨 */ */
-.top-header .header__column:nth-child(2) {
-    text-align: center;
-}
+
 .top-header .header__column:last-child {
     text-align: right;
 }
+.top-header .header__column:nth-child(2) {
+    text-align: center;
+}
+
 
 /* Friends 옆에 숫자에 노란색 적용하기. class로 header__number를 줬었음 그걸 이용
  */
+ 
 .top-header .header__number {
     color: yellow;
 }

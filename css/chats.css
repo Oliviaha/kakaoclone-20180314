@@ -59,7 +59,8 @@
     align-items: center;
     /* 네모에서 동그랗게 만들기 */
     border-radius: 50%;
-    /* 왜? 위치를 아래로 정렬하기 위해 position을 absolute로 */
+    /* 왜? 위치를 아래로 정렬하기 위해 position을 absolute로 
+    아마 ancestor element인 main 부분에서만 기준잡아 움직이게 하려고*/
     position: absolute;
     right: 20px;
     bottom : 80px;
