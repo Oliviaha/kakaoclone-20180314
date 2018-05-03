@@ -1,0 +1,15 @@
+.more{
+    background-color: #f2f2f2;
+}
+.more .more__header {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more__header .more-header__column {
+    display: flex;
+    align-items: center;
+}
