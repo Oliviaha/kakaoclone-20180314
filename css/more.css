@@ -13,3 +13,7 @@
     display: flex;
     align-items: center;
 }
+
+.more-header__column img{
+    width: 50px;
+}
