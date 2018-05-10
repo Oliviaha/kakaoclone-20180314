@@ -7,13 +7,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* 회색 공간을 만들어주기 위해서 이렇게 마진으로! 패딩하면 흰색안쪽이니까 흰색 바깥쪽으로 간격줘서
+    배경색인 회색을 보이게 하고 emoticons 시작 부분 영역을 흰색으로 하면 회색간격 생기지 */
+    margin-bottom: 10px;
 }
 
+
+
+.more__header .more-header__column img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.more__header i{
+    color:#523737;
+}
 .more__header .more-header__column {
     display: flex;
     align-items: center;
 }
 
-.more-header__column img{
-    width: 50px;
+.more__header .more-header__info .more-header__title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.more__header .more-header__info .more-header__subtitle{
+    font-size: 12px;
+    color: #b4b4b4;
+}
+/* more options 라는 큰 틀에 플랙스를 주면 네 아이콘이 하나씩 묶여서 정렬됨
+display:flex 만 넣었더니 가로로 쫙 정렬됨 */
+.more .more__options{
+    padding-top : 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* more options 큰 틀이 아니라 그 안에 각각 위치가 정렬될 아이콘에다가 display:flex 주는 것  
+왜냐하면 각각 안에서 이모티콘이랑 텍스트가 분리 되어야 하니까*/
+.more-options .more-option{
+    display: flex;
+    flex-direction: column;
+
 }
