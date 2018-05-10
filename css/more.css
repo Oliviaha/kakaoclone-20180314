@@ -43,12 +43,30 @@ display:flex 만 넣었더니 가로로 쫙 정렬됨 */
     background-color: white;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 /* more options 큰 틀이 아니라 그 안에 각각 위치가 정렬될 아이콘에다가 display:flex 주는 것  
 왜냐하면 각각 안에서 이모티콘이랑 텍스트가 분리 되어야 하니까*/
-.more-options .more-option{
+.more__options .more__option{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #523737;
+}
+.more__option .more__option-title {
+    margin-top: 10px;
+    font-size: 12px;
+}
 
+
+.more__plus-friends {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.more__plus-friends .plus-friends__header{
+    display: flex;
+    justify-content: space-between;
 }
