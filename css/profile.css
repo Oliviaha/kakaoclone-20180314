@@ -1,0 +1,15 @@
+.top-header--transparent{
+   background-color: transparent;
+}
+.profile .profile__header{
+    /*  VH= view for height 높이의 80%라는 의미  */
+    height: 80vh;
+    background-color: thistle;
+    width:100%;
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
