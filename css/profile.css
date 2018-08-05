@@ -1,15 +1,69 @@
 .top-header--transparent{
-   background-color: transparent;
+    background-color: transparent;
 }
+
 .profile .profile__header{
-    /*  VH= view for height 높이의 80%라는 의미  */
+    height:80vh;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile .profile__header {
     height: 80vh;
-    background-color: thistle;
-    width:100%;
+    background-image:url('https://i0.wp.com/thezinx.com/wp-content/uploads/md-10.png?w=1080');
+    background-position: center center;
+    background-size: 100%;
+    width: 100%;
     position: relative;
     top: -60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-}
+  }
+
+  .profile__header-container {
+      position: relative;
+      bottom: -60px;
+      text-align: center;
+  }
+  .profile__header-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .profile .profile__container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile .profile__container input{
+      /* padding: 4px; */
+      margin-bottom :22px;
+  }
+  .profile .profile__actions {
+      display: flex;
+      font-size: 13px;
+  }
+  .profile .profile__action { 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 15px;
+  }
+
+  .profile .profile__action-circle {
+      background: #f2f2f2;
+      padding: 10px;
+      border-radius: 50%;
+      margin-bottom : 10px;
+      color: #523737;
+  }
+  .profile .profile__action-title {
+      font-size: 12px;
+      font-weight: 600;
+  }

@@ -5,8 +5,12 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 
+.top-header a{
+    color:white;
+}
 /* top-header안에 있는 header__top 클래스에 세개의 header__column끼리 flex주고
 top-header안에 있는 header__bottom 클래스 내에서 세개의 header__column끼리 flex하나 주고 */
 .top-header .header__top,
@@ -29,9 +33,9 @@ top-header안에 있는 header__bottom 클래스 내에서 세개의 header__col
 각 요소가 딱 중앙에 올 수 있도록 폭을 조정하기로. 
 이렇게 하면 볼 수 있는 모습은 창을 제일 크게 했을 때 1/3씩 자리를 차지하고
 텍스트나 아이템들이 왼쪽 정렬로 되어서 배치됨.*/
-.top-header .header__column {
+/* .top-header .header__column {
     width: 33%;
-}
+} */
 
 .top-header .header__bottom .header__column:first-child{
     color: rgba(255,255,255,0.5);
@@ -43,14 +47,14 @@ top-header안에 있는 header__bottom 클래스 내에서 세개의 header__col
 /* 붙게 해야 함. 그래서 두 가지를 따로 지정해주어야 함. */
 
 /* 두번째 요소를 지정할때는 nth-child(2) second-child같은게 없어서.
-해당 클래스에서 젤 마지막 요소를 지정할때는 last-child로 언급해주면 됨 */ */
-
+해당 클래스에서 젤 마지막 요소를 지정할때는 last-child로 언급해주면 됨 */ 
+/* 
 .top-header .header__top .header__column:last-child {
-    text-align: right;
+    text-align: left;
 }
 .top-header .header__top .header__column:nth-child(2) {
     text-align: center;
-}
+} */
 .top-header .header__bottom .header__column:last-child {
     text-align: right;
 }
