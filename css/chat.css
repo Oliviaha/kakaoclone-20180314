@@ -3,3 +3,10 @@
     background-color: #a1c0d6;
     color:black;
 }
+.chat-header {
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+.chat{
+    background-color: #a1c0d6;
+    height: 100vh;
+}
