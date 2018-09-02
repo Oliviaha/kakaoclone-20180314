@@ -9,91 +9,88 @@
     <title>Chat</title>
 </head>
 <body>
-    <header class="top-header chat-header">
-        <div class="header__top">
-            <div class="header__column">
-                    <!-- plane icon -->
-                    <i class="fa fa-plane"></i>
-                    <!-- wifi icon -->
-                    <i class="fa fa-wifi"></i>
+    <body class="body-chat">
+         <header class="top-header chat-header">
+            <div class="header__top">
+                <div class="header__column">
+                        <!-- plane icon -->
+                        <i class="fa fa-plane"></i>
+                        <!-- wifi icon -->
+                        <i class="fa fa-wifi"></i>
+                </div>
+                
+                <div class="header__column">
+                    <span class="header__time">18:38</span>
+                </div>
+                
+                <div class="header__column">
+                    <!-- moon icon -->
+                    <i class="fa fa-moon-o"></i>
+                    <!-- bluethooth icon -->
+                    <i class="fa fa-bluetooth-b"></i>
+                    <span class="header__battery">66% 
+                        <!-- battery icon --> 
+                        <i class="fa fa-battery-half"></i>
+                    </span>
+                </div>
             </div>
-            
-            <div class="header__column">
-                <span class="header__time">18:38</span>
+<!-- kakaotalk below menu 각 탭을 누르면 화면 바뀌니까 각 화면이랑 연결하기 -->
+            <div class="header__bottom">
+                <div class="header__column">
+                    <a href="chats.html">
+                        <!-- arrow icon -->
+                        <i class="fa fa-chevron-left fa-lg"></i>
+                    </a>
+                </div>
+                <div class="header__column">
+                    <span class="header__text">Nick</span> 
+                </div>
+                <div class="header__column">
+                    <!-- search icon -->
+                    <i class="fa fa-search fa-lg"></i>
+                    <!-- list icon -->
+                    <i class="fa fa-bars fa-lg"></i>
+                </div>
+            </div>   
+        </header>
+<!-- chat message시작 -->
+        <main class="chat">
+            <div class="date-divider">
+                <span class="date-divider__text">Donderdag, Marrt 15, 2018</span>
             </div>
-            
-            <div class="header__column">
-                <!-- moon icon -->
-                <i class="fa fa-moon-o"></i>
-                <!-- bluethooth icon -->
-                <i class="fa fa-bluetooth-b"></i>
-                <span class="header__battery">66% 
-                    <!-- battery icon --> 
-                    <i class="fa fa-battery-half"></i>
+            <div class="chat__message chat__message-from-me"> <!-- 오른쪽 내 메시지.노란배경-->
+                <span class="chat__message-time">
+                    08:22
+                </span>
+                <span class="chat__message-body">
+                    Hello Honey! It's me.
+                </span> 
+            </div>
+    
+            <div class="chat__message chat__message-to-me"> <!--왼쪽 상대 메시지. 흰 배경-->
+                <img src="images/nick.jpg" class="chat__message-avatar">
+                <div class="chat__message-center"> <!--chat__message-center을 언제 쓰는지 잘보자.-->                <h3 class="chat__message-username">
+                    <h3 class="chat__message-username">Nick</h3>
+                    <span class="chat__message-body">
+                        Goedemorgen!
+                    </span>
+                </div>
+                <span class="chat__message-time">
+                    08:40
+                </span>
+            </div>
+        </main>
+
+    <!-- 채팅 입력창 시작부분 -->
+        <div class="type-message">
+            <i class="fa fa-plus fa-2x"></i>
+            <div class="type-message__input">
+                <input type="text">
+                <i class="fa fa-smile-o"></i>
+                <span class="record-message">
+                    <i class="fa fa-microphone"></i>
                 </span>
             </div>
         </div>
-
-
-<!-- kakaotalk below menu 각 탭을 누르면 화면 바뀌니까 각 화면이랑 연결하기 -->
-        <div class="header__bottom">
-            <div class="header__column">
-                <a href="chats.html">
-                    <!-- arrow icon -->
-                    <i class="fa fa-chevron-left fa-lg"></i>
-                </a>
-            </div>
-            <div class="header__column">
-                <span class="header__text">Nick</span> 
-            </div>
-            <div class="header__column">
-                <!-- search icon -->
-                <i class="fa fa-search fa-lg"></i>
-                <!-- list icon -->
-                <i class="fa fa-bars fa-lg"></i>
-            </div>
-        </div>   
-    </header>
-<!-- chat message시작 -->
-    <main class="chat">
-        <div class="date-divider">
-            <span class="date-divider__text">Donderdag, Marrt 15, 2018</span>
-        </div>
-        <div class="chat__message chat__message-from-me"> <!-- 오른쪽 내 메시지.노란배경-->
-            <span class="chat__message-time">
-                08:22
-            </span>
-            <span class="chat__message-body">
-                Hello Honey! It's me.
-            </span> 
-        </div>
- 
-        <div class="chat__message chat__message-to-me"> <!--왼쪽 상대 메시지. 흰 배경-->
-            <img src="images/nick.jpg" class="chat__message-abattar">
-            <div class="chat__message-center"> <!--chat__message-center을 언제 쓰는지 잘보자.-->                <h3 class="chat__message-username">
-                    Nick
-                </h3>
-            <span class="chat__message-body">
-                Goedemorgen!
-            </span>
-            <span class="chat__message-time">
-                08:40
-            </span>
-            </class>
-        </div>
-    </main>
-
-<!-- 채팅 입력창 시작부분 -->
-<div class="type-message">
-    <i class="fa fa-plus fa-2x"></i>
-    <div class="type-message__input">
-        <input type="text">
-        <i class="fa fa-smile-o"></i>
-        <span class="record-message">
-            <i class="fa fa-microphone"></i>
-        </span>
-    </div>
-</div>
-
-</body>
+    </body>
 </html>

@@ -1,3 +1,6 @@
+.body-chat{
+    padding-bottom:0px;
+}
 .chat-header,
 .chat-header a{
     background-color: #a1c0d6;
@@ -5,6 +8,7 @@
 }
 .chat-header {
     border-bottom:1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
 }
 .chat{
      background-color: #a1c0d6;
@@ -21,36 +25,59 @@
 }
 .chat__message{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: flex-end;
 }
+
 .chat__message-from-me {
     justify-content: flex-end;
-    align-content: flex-end;
-    margin-top: 20px;
 }
-.chat__message-from-me .chat__message-body {
-    background-color: #ffe934;
-    padding: 5px 5px;
-    border-radius: 5px;
-    margin-left:5px;
-}
-.chat__message-time{
+
+.chat__message-time {
     font-size: 8px;
-    color: rgba(0, 0, 0, 0.5);
+    margin-left:3px;
 }
-.chat__message-to-me{
+
+.chat__message-from-me .chat__message-body {
+    background-color: #ffe934;    
+}
+.chat__message-body{
+    padding: 5px 4px;
+    border-radius:5px;
+    margin-left:4px; 
+}
+
+.chat__message-to-me {
     display:flex;
 }
 .chat__message-to-me img{
-    height: 35px;
+    height: 40px;
     border-radius: 50%;
 }
-.chat__message-center{
-    margin-bottom:5px;
+.chat__message-to-me .chat__message-body{
+    background-color:white;
 }
-.chat__message-body{
-    padding-left: 10px;
-    background-color: white;
-    padding:5px 5px;
-    border-radius:5px;
+/* .chat__message-username{
+    margin-bottom: 13px;
+} */
+
+.chat__message-center{
+    display: flex;
+    flex-direction: column;
 }
 
+.chat__message-username{
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+.type-message {
+    width:100%;
+    background-color: #EEEEEE;
+    height: 45px;
+    bottom: 0;
+    position: fixed;
+    여기서 body에 padding0을 주기 전에는 하단에 약간 공간이 있었음.
+    뭐때문이지? 흠 모르겠음. 그래서,
+    이걸 없애기 위해서 body-chat이라는 클래스를 추가해서 공간을 없애주었음.
+}
